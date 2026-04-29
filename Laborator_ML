@@ -1,0 +1,39 @@
+import numpy as np
+a = np.array([1, 2, 3])
+print(a)
+print(type(a))
+print(a.dtype)
+print(a.shape)
+print(a[0])
+
+b = np.array([[1, 2, 3], [4, 5, 6]])
+print(b.shape)
+print(b[0][2])
+print(b[0,2])
+
+c = np.asarray([[1,2],[3,4]])
+print(type(c))
+print(c.shape)
+
+zero_array = np.zeros((3,2))
+print(zero_array)
+
+ones_array = np.ones((2,2))
+print(ones_array)
+
+constant_array = np.full((2,2),8)
+print(constant_array)
+
+identity_matrix = np.eye(3)
+print(identity_matrix)
+
+random_array = np.random.random((1,2))
+print(random_array)
+
+mu, sigma = 0, 0.1
+gaussian_random = np.random.normal(mu,sigma,(3,6))
+
+first_5 = np.arange(5)
+print(first_5)
+
+
